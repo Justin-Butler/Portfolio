@@ -141,7 +141,9 @@ h3.contactText {
     width: 23rem;
   }
 }
+/*Standard Portrait width: 375 Config*/
 @media only screen and (max-width: 375px) {
+  /*Card Config*/
   .card {
     width: 22rem;
   }
