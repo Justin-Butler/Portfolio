@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+/*Global Font Class*/
+.muktaFont {
+  font-family: 'Mukta Mahee', sans-serif; 
+}
+/*Global Color Scheme !important to overwrite Bootstrap*/
+/*Background Color*/
+body {
+  background-color: #000000 !important;
+  margin: 0;
+}
+#bioContain, #footer {
+  background-color: rgba(255, 255, 255, .1);
+}
+.card {
+  background-color: rgba(255, 255, 255, .3) !important;
+}
+/*Text Color*/
+#siteTitle, #bio, .card-title, .card-text, .contactText, .contentIcon, a.contactText:hover {
+  color: #ffffff;
+}
+
+/***Content Config***/
+/**Grid Definition**/
+.gridContain {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  row-gap: 20px;
+  justify-items: center;
+}
+/*Content Banner*/
+#siteTitle {
+  grid-column: 1/span 8;
+  font-size: 8rem;
+  margin: 0;
+}
+/*Bio Config*/
+#bioContain {
+  grid-column: 1/span 8;
+  padding: 20px;
+}
+#bio {
+  margin: 0 20%;
+}
+/*Portfolio Card Config*/
+#siteContainer {
+  grid-column: 1/span 8;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 20px;
+  column-gap: 30px;
+  margin: 0 10px;
+}
+.card {
+  width: 20rem; 
+}
+/*Footer Config*/
+#footer {
+  grid-column: 1/span 8;
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*Contact Config*/
+#contactContain {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 20px;
+  row-gap: 5px;
+  margin-top: 10px;
+}
+h3.contactText {
+  grid-column: 1/ span 2;
+  justify-self: center;
+}
+.contentIcon {
+  font-size: 24px;
+  justify-self: center;
+}
+.contactText {
+  margin: 0;
+}
+/****Responsive Design****/
+/*IPad Landscape*/
+@media only screen and (max-width: 1024px) {
+  /*Bio Text Margin*/
+  #bio {
+    margin: 0 10%;
+  }
+  /*Card Config*/
+  #siteContainer {
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+  }
+}
+/*IPad Portrait*/
+@media only screen and (max-width: 768px) {
+  /*Bio Text Margin*/
+  #bio {
+    margin: 0 5%;
+  }
+  /*Card Config*/
+  #siteContainer {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+  }
+}
+/*iPhone 6-8 landscape & Android (Pixel 2) landscape*/
+@media only screen and (max-width: 684px) {
+  /*Header Config*/
+  #siteTitle {
+    font-size: 7rem;
+  }
+  /*Card Config*/
+  #siteContainer {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 12px;
+  }
+}
+/*Android Pixel 2 Portrait*/
+@media only screen and (max-width: 412px) {
+  /*Header Config*/
+  #siteTitle {
+    font-size: 6rem;
+    text-align: center;
+  }
+  /*Bio Text Margin*/
+  #bio {
+    margin: 0 1%;
+  }
+  /*Card Config*/
+  #siteContainer {
+    grid-template-columns: auto;
+    column-gap: 12px;
+  }
+  .card {
+    width: 23rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 22rem;
+  }
+}
