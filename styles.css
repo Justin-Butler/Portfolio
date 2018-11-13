@@ -95,7 +95,7 @@ h3.contactText {
   /*Card Config*/
   #siteContainer {
     grid-template-columns: repeat(3, auto);
-    column-gap: 20px;
+    column-gap: 15px;
   }
 }
 /*IPad Portrait*/
@@ -121,9 +121,12 @@ h3.contactText {
     grid-template-columns: repeat(2, auto);
     column-gap: 12px;
   }
+  .card {
+    width: 19rem;
+  }
 }
 /*Android Pixel 2 Portrait*/
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 414px) {
   /*Header Config*/
   #siteTitle {
     font-size: 6rem;
