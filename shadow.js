@@ -1,5 +1,5 @@
 //Hover Effect for each Card.
-$('#card').on({
+$('.card').on({
   mouseenter: function(){
     $(this).css("boxShadow", "2px 2px 10px #ffffff");
   },
