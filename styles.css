@@ -18,7 +18,7 @@ body {
   background-color: rgba(255, 255, 255, .3) !important;
 }
 /*Text Color*/
-#siteTitle, #bio, .card-title, .card-text, .contactText, .contentIcon, a.contactText:hover {
+#siteTitle, .bio, .card-title, .card-text, .contactText, .contentIcon, a.contactText:hover {
   color: #ffffff;
 }
 
@@ -42,7 +42,7 @@ body {
   grid-column: 1/span 8;
   padding: 20px;
 }
-#bio {
+.bio {
   margin: 0 20%;
 }
 /*Portfolio Card Config*/
