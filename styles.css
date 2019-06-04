@@ -57,6 +57,9 @@ body {
 .card {
   width: 20rem; 
 }
+.card:hover {
+  box-shadow: 2px 2px 10px #ffffff;
+}
 /*Footer Config*/
 #footer {
   grid-column: 1/span 8;
