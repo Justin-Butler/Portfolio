@@ -23,133 +23,83 @@ body {
 }
 
 /***Content Config***/
-/**Grid Definition**/
-.gridContain {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  row-gap: 20px;
-  justify-items: center;
-}
 /*Content Banner*/
 #siteTitle {
-  grid-column: 1/span 8;
   font-size: 8rem;
-  text-align: center;
-  margin: 0;
 }
 /*Bio Config*/
 #bioContain {
-  grid-column: 1/span 8;
-  padding: 20px;
-}
-.bio {
-  margin: 0 20%;
+  padding: 10px;
 }
 /*Portfolio Card Config*/
-#siteContainer {
-  grid-column: 1/span 8;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  row-gap: 20px;
-  column-gap: 30px;
-  margin: 0 10px;
-}
 .card {
-  width: 20rem; 
+  width: 22rem;
+  height: 95%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card:hover {
   box-shadow: 2px 2px 10px #ffffff;
 }
 /*Footer Config*/
 #footer {
-  grid-column: 1/span 8;
   padding: 20px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 /*Contact Config*/
-#contactContain {
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 50px auto;
-  column-gap: 20px;
-  row-gap: 5px;
-  margin-top: 10px;
-}
-h3.contactText {
-  grid-column: 1/ span 2;
-  justify-self: center;
-}
 .contentIcon {
   font-size: 24px;
-  justify-self: center;
 }
-.contactText {
-  margin: 0;
+a.contentText {
+  padding-left: 0;
 }
 /****Responsive Design****/
-/*IPad Landscape*/
-@media only screen and (max-width: 1024px) {
-  /*Bio Text Margin*/
-  #bio {
-    margin: 0 10%;
-  }
-  /*Card Config*/
-  #siteContainer {
-    grid-template-columns: repeat(3, auto);
-    column-gap: 15px;
-  }
-}
-/*IPad Portrait*/
-@media only screen and (max-width: 768px) {
-  /*Bio Text Margin*/
-  #bio {
-    margin: 0 5%;
-  }
-  /*Card Config*/
-  #siteContainer {
-    grid-template-columns: repeat(2, auto);
-    column-gap: 30px;
-  }
-}
-/*iPhone 6-8 landscape & Android (Pixel 2) landscape*/
-@media only screen and (max-width: 684px) {
-  /*Header Config*/
-  #siteTitle {
-    font-size: 7rem;
-  }
-  /*Card Config*/
-  #siteContainer {
-    grid-template-columns: repeat(2, auto);
-    column-gap: 12px;
-  }
+@media only screen and (max-width: 1764px) {
   .card {
     width: 19rem;
   }
 }
-/*Android Pixel 2 Portrait*/
-@media only screen and (max-width: 414px) {
-  /*Header Config*/
-  #siteTitle {
-    font-size: 6rem;
-  }
-  /*Bio Text Margin*/
-  #bio {
-    margin: 0 1%;
-  }
-  /*Card Config*/
-  #siteContainer {
-    grid-template-columns: auto;
-    column-gap: 12px;
-  }
+@media only screen and (max-width: 1527px) {
   .card {
-    width: 23rem;
+    width: 18rem;
   }
 }
-/*Standard Portrait width: 375 Config*/
-@media only screen and (max-width: 375px) {
-  /*Card Config*/
+@media only screen and (max-width: 1430px) {
+  .card {
+    width: 17rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .card {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .card {
+    width: 19rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .card {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .card {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 19rem;
+  }
+}
+@media only screen and (max-width: 600px) {
   .card {
     width: 21rem;
   }
