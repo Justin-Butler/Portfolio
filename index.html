@@ -8,132 +8,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <!---Grid Container---->
-    <div class="gridContain">
-      <!---Banner--->
-      <h1 class="muktaFont" id="siteTitle">Justin Butler</h1>
-      <div id="bioContain">
-        <!---Brief Description--->
-        <p class="muktaFont bio">Hello, my name is Justin Butler and I appreciate you taking the time to visit my portfolio. My Bachelor's Degree is in Media Communications & Technology obtained from East Stroudsburg University. I am currently working as an Answer Team Consulatant for Aetna Life Insurance. I began learning Front-End Development earlier this year as I have had interest in learning for some time, but 2018 is the year I made it a goal to learn. I have always had a logical mind, so learning to code has been fun.</p>
-        <p></p>
-        <p class="muktaFont bio">My Technical Skills include the following:</p>
-        <ul class="muktaFont bio">
-          <li>HTML/HTML5</li>
-          <li>CSS
-            <ul>
-              <li>Bootstrap 4</li>
-            </ul>
-          </li>
-          <li>JavaScript
-            <ul>
-              <li>JQuery</li>
-            </ul>
-          </li>
-          <li>PHP</li>
-        </ul>
-        <p></p>
-        <p class="muktaFont bio">The content below is organized from newest to oldest.</p>
-       </div>
+    <!--Grid Container-->
+    <main class="container-fluid">
+      <!--Banner-->
+      <section class="row">
+        <div class="col">
+          <h1 class="muktaFont text-center m-0" id="siteTitle">Justin Butler</h1>
+        </div>     
+      </section>
+
+      <section class="row justify-content-center" id="bioContain">
+        <div class="col-xl-7">
+          <!--Brief Description-->
+          <p class="muktaFont bio">Hello, my name is Justin Butler and I appreciate you taking the time to visit my portfolio. My Bachelor's Degree is in Media Communications & Technology obtained from East Stroudsburg University. I am currently working as an Answer Team Consulatant for Aetna Life Insurance. I began learning Front-End Development earlier this year as I have had interest in learning for some time, but 2018 is the year I made it a goal to learn. I have always had a logical mind, so learning to code has been fun.</p>
+          <p class="muktaFont bio">My Technical Skills include the following:</p>
+          <ul class="muktaFont bio">
+            <li>HTML/HTML5</li>
+            <li>CSS
+              <ul>
+                <li>Bootstrap 4</li>
+              </ul>
+            </li>
+            <li>JavaScript
+              <ul>
+                <li>JQuery</li>
+              </ul>
+            </li>
+            <li>PHP</li>
+          </ul>
+          <p class="muktaFont bio m-0">The content below is organized from newest to oldest.</p>
+        </div>
+       </section>
       <!---Portfolio Cards (Bootstrap)--->
-      <div id="siteContainer">
-        <!-----Jumbotron Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\Jumbotron_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Jumbotron (Bootstrap 4)</h5>
-            <p class="card-text">Jumbotron page with a zoom effect using JS/JQuery. Animation on Button that will cause an arrow to show when hovered.</p>
-            <a href="https://justin-butler.github.io/Jumbotron/" class="btn btn-outline-light">Github</a>
-            <a href="https://codepen.io/jab3496/full/xyNewL/" class="btn btn-outline-light">CodePen</a>
-            <a href="https://github.com/Justin-Butler/Jumbotron" class="btn btn-outline-light">Read Me</a>
+      <section class="row justify-content-center">
+        <div class="col-xl-10 col-lg-11 col-md-10 col-sm-9 col-xs-9">
+          <div class="row justify-content-center">
+            <!--Jumbotron Card-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="images\Jumbotron_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Jumbotron (Bootstrap 4)</h5>
+                  <p class="card-text">Jumbotron page with a zoom effect using JS/JQuery. Animation on Button that will cause an arrow to show when hovered.</p>
+                  <a href="https://justin-butler.github.io/Jumbotron/" class="btn btn-outline-light">Github</a>
+                  <a href="https://codepen.io/jab3496/full/xyNewL/" class="btn btn-outline-light">CodePen</a>
+                  <a href="https://github.com/Justin-Butler/Jumbotron" class="btn btn-outline-light">Read Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----Company Home Page Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\companyHome_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">My Company Site - Home (Bootstrap 4)</h5>
+                  <p class="card-text">Generic Company website I created using HTML and CSS. For layout CSS-Grid was used and Bootstrap was utilized. Fully Responsive!</p>
+                  <a href="https://justin-butler.github.io/Company-Site/" class="btn btn-outline-light">Github</a>
+                  <a href="https://codepen.io/jab3496/full/XPOgEm/" class="btn btn-outline-light">CodePen</a>
+                  <a href="https://github.com/Justin-Butler/Company-Site" class="btn btn-outline-light">Read Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----Company Article Page Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\companyArticle_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">My Company Site - Article (Bootstrap 4)</h5>
+                  <p class="card-text">This is the layout created for company articles. It includes breadcrumb navigation from Bootstrap 4. Fully Responsive!</p>
+                  <a href="https://justin-butler.github.io/Company-Site/articlePH.html" class="btn btn-outline-light">Github</a>
+                  <a href="https://codepen.io/jab3496/full/jeLLVo/" class="btn btn-outline-light">CodePen</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----Company Registration Page Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\companyRegister_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">My Company Site - Register (Bootstrap 4)</h5>
+                  <p class="card-text">Registration form created utilizing bootstrap for design and CSS-Grid for layout. It includes Verification coded using Javascript/JQuery. Fully Responsive!</p>
+                  <a href="https://justin-butler.github.io/JS_Form_Validation/" class="btn btn-outline-light">Github</a>
+                  <a href="https://codepen.io/jab3496/full/qJQXBE/" class="btn btn-outline-light">CodePen</a>
+                  <a href="https://justin-butler.github.io/JQuery_Form_Validation/" class="btn btn-outline-light">Read Me</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----Square Game Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\squareGame_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">The Color Game</h5>
+                  <p class="card-text">Simple Javascript game where the objective is to select the square that matches the provided RGB value.</p>
+                  <a href="https://justin-butler.github.io/Squares-Color-Game/" class="btn btn-outline-light">Github</a>
+                  <a href="https://codepen.io/jab3496/full/PBgeYN/" class="btn btn-outline-light">CodePen</a>
+                  <a href="https://github.com/Justin-Butler/Squares-Color-Game" class="btn btn-outline-light">Read Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----Blog It Page Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\blogitHome_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Blog It Prototype</h5>
+                  <p class="card-text">A Simple page made experimenting with a cleaner design and colors. Learning how to do more with CSS.</p>
+                  <a href="https://codepen.io/jab3496/full/oMwQdp/" class="btn btn-outline-light">CodePen</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----First Website CSS-Grid Card------>
+              <div class="card" id="card">
+                <img class="card-img-top" src="images\firstWebsiteCSS_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">First Website (CSS-Grid)</h5>
+                  <p class="card-text">Remade the website using CSS-Grid to organize the layout. Also Fully Responsive.</p>
+                  <a href="https://codepen.io/jab3496/full/RBabOo" class="btn btn-outline-light">CodePen</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <!-----First Website No CSS-Grid Card------>
+              <div class="card">
+                <img class="card-img-top" src="images\firstWebsiteNoCSS_Img.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">First Website (No CSS-Grid)</h5>
+                  <p class="card-text">This is the first site I have created after I learned HTML and some CSS. It is very simple, but it is fully responsive.</p>
+                  <a href="https://codepen.io/jab3496/full/rKeBpm/" class="btn btn-outline-light">CodePen</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-----Company Home Page Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\companyHome_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">My Company Site - Home (Bootstrap 4)</h5>
-            <p class="card-text">Generic Company website I created using HTML and CSS. For layout CSS-Grid was used and Bootstrap was utilized. Fully Responsive!</p>
-            <a href="https://justin-butler.github.io/Company-Site/" class="btn btn-outline-light">Github</a>
-            <a href="https://codepen.io/jab3496/full/XPOgEm/" class="btn btn-outline-light">CodePen</a>
-            <a href="https://github.com/Justin-Butler/Company-Site" class="btn btn-outline-light">Read Me</a>
-          </div>
-        </div>
-        <!-----Company Article Page Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\companyArticle_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">My Company Site - Article (Bootstrap 4)</h5>
-            <p class="card-text">This is the layout created for company articles. It includes breadcrumb navigation from Bootstrap 4. Fully Responsive!</p>
-            <a href="https://justin-butler.github.io/Company-Site/articlePH.html" class="btn btn-outline-light">Github</a>
-            <a href="https://codepen.io/jab3496/full/jeLLVo/" class="btn btn-outline-light">CodePen</a>
-          </div>
-        </div>
-        <!-----Company Registration Page Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\companyRegister_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">My Company Site - Register (Bootstrap 4)</h5>
-            <p class="card-text">Registration form created utilizing bootstrap for design and CSS-Grid for layout. It includes Verification coded using Javascript/JQuery. Fully Responsive!</p>
-            <a href="https://justin-butler.github.io/JS_Form_Validation/" class="btn btn-outline-light">Github</a>
-            <a href="https://codepen.io/jab3496/full/qJQXBE/" class="btn btn-outline-light">CodePen</a>
-            <a href="https://justin-butler.github.io/JQuery_Form_Validation/" class="btn btn-outline-light">Read Me</a>
-          </div>
-        </div>
-        <!-----Square Game Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\squareGame_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">The Color Game</h5>
-            <p class="card-text">Simple Javascript game where the objective is to select the square that matches the provided RGB value.</p>
-            <a href="https://justin-butler.github.io/Squares-Color-Game/" class="btn btn-outline-light">Github</a>
-            <a href="https://codepen.io/jab3496/full/PBgeYN/" class="btn btn-outline-light">CodePen</a>
-            <a href="https://github.com/Justin-Butler/Squares-Color-Game" class="btn btn-outline-light">Read Me</a>
-          </div>
-        </div>
-        <!-----Blog It Page Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\blogitHome_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Blog It Prototype</h5>
-            <p class="card-text">A Simple page made experimenting with a cleaner design and colors. Learning how to do more with CSS.</p>
-            <a href="https://codepen.io/jab3496/full/oMwQdp/" class="btn btn-outline-light">CodePen</a>
-          </div>
-        </div>
-        <!-----First Website CSS-Grid Card------>
-        <div class="card" id="card">
-          <img class="card-img-top" src="images\firstWebsiteCSS_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">First Website (CSS-Grid)</h5>
-            <p class="card-text">Remade the website using CSS-Grid to organize the layout. Also Fully Responsive.</p>
-            <a href="https://codepen.io/jab3496/full/RBabOo" class="btn btn-outline-light">CodePen</a>
-          </div>
-        </div>
-        <!-----First Website No CSS-Grid Card------>
-        <div class="card">
-          <img class="card-img-top" src="images\firstWebsiteNoCSS_Img.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">First Website (No CSS-Grid)</h5>
-            <p class="card-text">This is the first site I have created after I learned HTML and some CSS. It is very simple, but it is fully responsive.</p>
-            <a href="https://codepen.io/jab3496/full/rKeBpm/" class="btn btn-outline-light">CodePen</a>
-          </div>
-        </div>
-      </div>
-      <!-----End Porfolio Cards----->
-      <div id="footer"> 
         
-        <div id="contactContain">
-          <h3 class="contactText">Contact Information:</h3>
-          <ion-icon name="mail" class="contentIcon"></ion-icon>
-          <a class="contactText" href="mailto:justinabutler0720@gmail.com">JustinAButler0720@gmail.com</a>
-          <ion-icon name="logo-linkedin" class="contentIcon"></ion-icon>
-          <a class="contactText" href="https://www.linkedin.com/in/justin-butler-73b67159">LinkedIn</a>
-          <ion-icon name="laptop" class="contentIcon"></ion-icon>
-          <a class="contactText" href="https://codepen.io/jab3496/">CodePen</a>
-          <ion-icon name="globe" class="contentIcon"></ion-icon>
-          <a class="contactText" href="https://github.com/Justin-Butler">Github</a>
+        <!--<div class="col-xl-3 col-md-4 col-sm-6"></div>-->
+      </section>
+      <!-----End Porfolio Cards----->
+      <section class="row justify-content-center mt-2" id="footer"> 
+        <div class="col-auto">
+          <div class="row">
+            <div class="col">
+              <h3 class="contactText text-center">Contact Information:</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <ion-icon name="mail" class="contentIcon"></ion-icon>
+            </div>
+            <div class="col-auto">
+              <a class="contactText" href="mailto:justinabutler0720@gmail.com">JustinAButler0720@gmail.com</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <ion-icon name="logo-linkedin" class="contentIcon"></ion-icon>
+            </div>
+            <div class="col-auto">
+              <a class="contactText" href="https://www.linkedin.com/in/justin-butler-73b67159">LinkedIn</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <ion-icon name="laptop" class="contentIcon"></ion-icon>
+            </div>
+            <div class="col-auto">
+              <a class="contactText" href="https://codepen.io/jab3496/">CodePen</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <ion-icon name="globe" class="contentIcon"></ion-icon>
+            </div>
+            <div class="col-auto">
+              <a class="contactText" href="https://github.com/Justin-Butler">Github</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <!---Grid Container End---->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
